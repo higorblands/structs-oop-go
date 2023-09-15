@@ -16,11 +16,11 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.17  # Defina a versão do Go desejada
+        go-version: 1.17 
 
     - name: Initialize Go module and tidy
       run: |
-        go mod init <nome-do-seu-módulo>
+        go mod init go.main
         go mod tidy
 
     - name: Build and Test
